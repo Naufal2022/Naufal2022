@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--   BOOSTRAP CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!--   END BOOSTRAP CSS -->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <div class="header">
+            <div class="container">
+            <div class="logo">
+                <img src="assets/lol.png">
+            </div>
+                <ul class="navigation">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Tentang kami</a></li>
+                    <li><a href="#">Kontak kami</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- END NAVBAR -->
+
+
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="https://pict.sindonews.net/dyn/360/gensindo/content/2020/02/25/1/1866/mengapa-di-poster-film-foto-dan-nama-pemain-suka-terbalik-images-lqb.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/KJ-jlbqkF3U/maxresdefault.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjb4QqhICuKNyLeSqC_hVf4Ff7Z6TgGkaYqQ&usqp=CAU" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            </div>
+            <!-- END CAROUSEL -->
+        
+            <!-- REKOMENDASI -->
+            <div class="container" id="app">
+                <div class="row mt-3">
+                <div class="col-4 col-md-6 mb-3" v-for="(movie, $index) in movies" :key="$index">
+        
+                    <div class="card" style="widht: 20rem;">
+                        <img :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">{{movie.title}}</h5>
+                        <p class="card-text">{{movie.overview}}</p>
+                        <a href="#" class="btn btn-success ">Buy</a>
+                        <a href="#" class="btn btn-primary mx-2">Go To Detile</a>
+            </div>
+            </div>
+                    
+                </div>
+                </div>
+            </div>
+        
+            <br/><br/><br/><br/>
+            <!-- END REKOMENDASI -->
+        
+            <!-- FOOTER -->
+            <div class="container bg-dark fixed-bottom">
+                <div class="text-light">
+                <p>Copy Right@2022</p>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        
+            <script src="https://unpkg.com/vue@3"></script>
+            <script src="script.js"></script>
+            <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+        
+            <!-- JavaScript BOOSTRAP JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+            <!-- Script JS -->
+            <script src="s">
+            
+            </script>
+
+
+
+
+
+    </body>
+</html>
