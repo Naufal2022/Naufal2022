@@ -12,3 +12,5 @@ git commit -m "firs commit"
 
 --->untuk mengetahui status commit
 git log --oneline
+
+---> ikuti step by step di gihub yang hendak di publish
