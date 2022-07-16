@@ -14,3 +14,6 @@ git commit -m "firs commit"
 git log --oneline
 
 ---> ikuti step by step di gihub yang hendak di publish
+git branch -M main
+git remote add origin https://github.com/Naufal2022/Naufal2022.git
+git push -u origin main
