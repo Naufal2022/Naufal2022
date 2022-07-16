@@ -1,0 +1,14 @@
+--->masuk ke root direktori
+cd .././../
+
+--->inisialisasi
+git init
+
+--->menambahakan file yang hendak di upload
+git add . atau git add nama_file
+
+--->meng comit file dengan memberi nama langkah komit
+git commit -m "firs commit"
+
+--->untuk mengetahui status commit
+git log --oneline
